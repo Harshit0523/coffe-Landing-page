@@ -1,0 +1,153 @@
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.bgcolor {
+    background-color: rgb(119, 62, 62);
+    /* color: white; */
+
+}
+/* Naviigatio Bar: Logo and Image */
+#logo{
+    margin: 1px 2px;
+}
+#logo img{
+    height: 45px;
+    margin: 5px 5px;
+}
+/* Navigation Bar:list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration:none ;
+    color: black;
+    font-size:24px ;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px ;
+    height: 600px;
+}
+#home::before{
+    content: "";
+    background:url('tea.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity:0.8;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Serevics section  */
+#services{
+    margin: 23px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    /* width: 20%; */
+    margin-bottom: 20px;
+    margin: 2px 13px;
+    background:#f2f2f2;    
+    border-radius:28px
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+    /* Contact Section */
+    #contact{
+     position: relative;
+    }
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('contact.jpeg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+/* Utility Classes */
+.h-primary{
+    padding: 12px;
+    font-size: 2.5rem;
+}
+.h-secondary{
+    padding: 12px;
+    justify-content: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(190, 73, 73);
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.center{
+    text-align: center;
+}
